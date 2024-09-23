@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="size-full m-0 p-0  overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flood Donation Website</title>
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend {
+          font-family: "Lexend", sans-serif;
+        }
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/93b354355b.js" crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Daisy ui -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="lexend size-full m-0 p-0  overflow-x-hidden">
+    <header class="px-0 lg:px-28 py-9 bg-[#F9F7F3]">
+        <nav class="flex justify-evenly lg:justify-around pl-4 lg:pl-0">
+            <button id="blog-btn" class="btn rounded-lg bg-[#B4F461] text-base lg:text-xl font-semibold">Blog</button>
+            <div class="flex items-center gap-2 lg:gap-3 pl-10 lg:pl-0">
+                <img src="./assets/logo.png" alt="">
+                <p class="text-sm lg:text-xl font-semibold">Donate Bangladesh</p>
+            </div>
+            <div class="flex items-center gap-2 lg:gap-3">
+                <img src="./assets/coin.png" alt="">
+                <p id="balance" class="text-sm lg:text-xl font-semibold">5500 BDT</p>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner section -->
+    <section class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <div class="flex w-1/2 mx-auto pr-40 lg:pr-0 pl-0 lg:pl-20  pt-5 lg:pt-20 gap-2 lg:gap-5 ">
+            <!-- Donate-btn -->
+            <button id="donate-btn" class="btn rounded-lg bg-[#B4F461] text-base lg:text-xl font-semibold">Donation</button>
+            <!-- History-btn -->
+            <button id="history-btn" class="btn rounded-lg border-[#aaa8a8] text-base lg:text-xl font-semibold">History</button>
+        </div>
+    </section>
+    <main>
+
+
+    </main>
+    
     
 </body>
 </html>
