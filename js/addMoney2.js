@@ -6,14 +6,17 @@ document.getElementById('btn-donate-feni')
 
       if(isNaN(addMoneyFeni)){
         alert('Invalid Donation Amount');
+        closeInvalidModal2();
         return;
       }
       if(addMoneyFeni<0){
         alert('Invalid Donation Amount');
+        closeInvalidModal2();
         return;
       }
       if(addMoneyFeni>currentBalance){
         alert('Try again Later');
+        closeInvalidModal2();
         return;
       }
   
@@ -24,4 +27,6 @@ document.getElementById('btn-donate-feni')
       
       const newBalanceFeni = currentBalance - addMoneyFeni;
       document.getElementById('balance').innerText = newBalanceFeni + ' BDT';
+
+    
    })

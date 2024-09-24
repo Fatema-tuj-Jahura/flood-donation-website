@@ -6,14 +6,17 @@ document.getElementById('btn-donate-noakhali')
 
       if(isNaN(addMoney)){
         alert('Invalid Donation Amount');
+        closeInvalidModal();
         return;
       }
       if(addMoney<0){
         alert('Invalid Donation Amount');
+        closeInvalidModal();
         return;
       }
       if(addMoney>currentBalance){
         alert('Try again Later');
+        closeInvalidModal();
         return;
       }
   
@@ -24,4 +27,5 @@ document.getElementById('btn-donate-noakhali')
       
       const newBalance = currentBalance - addMoney;
       document.getElementById('balance').innerText = newBalance + ' BDT';
+    
    })

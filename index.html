@@ -73,25 +73,25 @@
                     </div>
                     <h4 class="text-sm font-bold">Donate for Flood at Noakhali, Bangladesh</h4>
                     <p class="text-xs lg:text-sm text-gray-800 font-light">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="number" id="add-money-noakhali" placeholder="Write Donation amount here" class="input input-bordered w-full " />
-                    <button id="btn-donate-noakhali" onclick="modal.showModal()" class="btn rounded-lg bg-[#B4F461] text-center text-sm font-semibold">Donate Now</button>
-                    <dialog id="modal" class="modal">
-                        <form method="dialog"
-                        class="modal-box px-5 py-10 mb-5 flex flex-col justify-center items-center">
-                        <h3 class="font-bold text-2xl  my-5">Congrates!</h3>
-                        <img src="./assets/coin.png" alt="">
-                        <div class="text-center">
-                            <p class="font-light">You Have Donated For Humankind</p>
-                        </div>
-                        <p class="my-2 font-bold">successfully</p>
-                        <button onclick="closeModal()" class="btn px-16 btn-md hover:bg-[#B4F461] transition-colors ease-in duration-300">Close information</button>
-                            
-                        </form>
-
-                    </dialog>
+                    <input type="text" id="add-money-noakhali" placeholder="Write Donation amount here" class="input input-bordered w-full " />
+                    <button id="btn-donate-noakhali" onclick="modal_1.showModal()" class="btn rounded-lg bg-[#B4F461] text-center text-sm font-semibold">Donate Now</button>
+                    
                 </div>
             </div>
         </section>
+        <!-- modal_noakhali -->
+        <dialog id="modal_1" class="modal">
+            <form method="dialog"
+            class="modal-box px-5 py-10 mb-5 flex flex-col justify-center items-center">
+            <h3 class="font-bold text-2xl  my-5">Congrates!</h3>
+            <img src="./assets/coin.png" alt="">
+            <div class="text-center">
+                <p class="font-light">You Have Donated For Humankind</p>
+            </div>
+            <p class="my-2 font-bold">successfully</p>
+            <button onclick="closeModal()" class="btn close-btn px-16 btn-md hover:bg-[#B4F461] transition-colors ease-in duration-300">Close information</button>   
+            </form>
+        </dialog>
         <!-- Feni donate card -->
         <section class="max-w-screen-xl mx-auto mt-5 px-16 lg:px-28 pt-5 lg:pt-10">
           <div class="rounded-2xl border-[#aaa8a8] bg-white shadow-md  p-4">
@@ -106,25 +106,25 @@
                     </div>
                     <h4 class="text-sm font-bold">Donate for Flood Relief in Feni,Bangladesh</h4>
                     <p class="text-xs lg:text-sm text-gray-800 font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                    <input id="add-money-feni" type="number" placeholder="Write Donation amount here" class="input input-bordered w-full " />
-                    <button id="btn-donate-feni" onclick="showModal()" class="btn rounded-lg bg-[#B4F461] text-center text-sm font-semibold">Donate Now</button>
-                    <dialog id="modal_1" class="modal">
-                        <form method="dialog"
-                        class="modal-box px-5 py-10 mb-5 flex flex-col justify-center items-center">
-                        <h3 class="font-bold text-2xl  my-5">Congrates!</h3>
-                        <img src="./assets/coin.png" alt="">
-                        <div class="text-center">
-                            <p class="font-light">You Have Donated For Humankind</p>
-                        </div>
-                        <p class="my-2 font-bold">successfully</p>
-                        <button onclick="closeModal()" class="btn px-16 btn-md hover:bg-[#B4F461] transition-colors ease-in duration-300">Close information</button>
-                            
-                        </form>
-
-                    </dialog>
+                    <input id="add-money-feni" type="text" placeholder="Write Donation amount here" class="input input-bordered w-full " />
+                    <button id="btn-donate-feni" onclick="modal_2.showModal()" class="btn rounded-lg bg-[#B4F461] text-center text-sm font-semibold">Donate Now</button>
+                    
                 </div>
             </div>
         </section>
+        <!-- Modal feni -->
+        <dialog id="modal_2" class="modal">
+            <form method="dialog"
+            class="modal-box px-5 py-10 mb-5 flex flex-col justify-center items-center">
+            <h3 class="font-bold text-2xl  my-5">Congrates!</h3>
+            <img src="./assets/coin.png" alt="">
+            <div class="text-center">
+                <p class="font-light">You Have Donated For Humankind</p>
+            </div>
+            <p class="my-2 font-bold">successfully</p>
+            <button onclick="closeModal()" class="btn close-btn px-16 btn-md hover:bg-[#B4F461] transition-colors ease-in duration-300">Close information</button>    
+            </form>
+        </dialog>
         <!-- Aid for injured -->
         <section class="max-w-screen-xl mx-auto mt-5 px-16 lg:px-28 pt-5 lg:pt-10 mb-10">
             <div class="rounded-2xl border-[#aaa8a8] bg-white shadow-md  p-4">
@@ -134,22 +134,37 @@
                       <div class="stats shadow-lg w-1/2 lg:w-1/3">
                           <div class="stat flex items-center justify-center">
                             <img src="./assets/coin.png" alt=""> 
-                            <div class="text-sm">0 bdt</div>
+                            <div id="current-donation-injured" class="text-sm">0 bdt</div>
                           </div>
                       </div>
                       <h4 class="text-sm font-bold">Aid for Injured in the Quota Movement</h4>
                       <p class="text-xs lg:text-sm text-gray-800 font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                      <input type="text" placeholder="Write Donation amount here" class="input input-bordered w-full " />
-                      <button class="btn rounded-lg bg-[#B4F461] text-center text-sm font-semibold">Donate Now</button>
+                      <input id="add-money-injured" type="text" placeholder="Write Donation amount here" class="input input-bordered w-full " />
+                      <button id="btn-donate-injured" onclick="modal_3.showModal()" class="btn rounded-lg bg-[#B4F461] text-center text-sm font-semibold">Donate Now</button>
                   </div>
               </div>
           </section>
+          <!-- Modal for injured -->
+          <dialog id="modal_3" class="modal">
+            <form method="dialog"
+            class="modal-box px-5 py-10 mb-5 flex flex-col justify-center items-center">
+            <h3 class="font-bold text-2xl  my-5">Congrates!</h3>
+            <img src="./assets/coin.png" alt="">
+            <div class="text-center">
+                <p class="font-light">You Have Donated For Humankind</p>
+            </div>
+            <p class="my-2 font-bold">successfully</p>
+            <button onclick="closeModal()" class="btn close-btn px-16 btn-md hover:bg-[#B4F461] transition-colors ease-in duration-300">Close information</button>    
+            </form>
+        </dialog>
+
         
 
 
     </main>
   <script src="./js/addMoney.js"></script>
   <script src="./js/addMoney2.js"></script> 
+  <script src="./js/addMoney3.js"></script>
   <script src="./js/common.js"></script>  
 </body>
 </html>

@@ -13,13 +13,25 @@ function getTextFieldById (id){
 }
 
 
-
-
-// addmoney2
-function showModal() {
-    document.getElementById('modal').style.display = 'block';
+function showModal(){
+    document.getElementsByClassName('modal').style.display = 'block';
 }
 
 function closeModal() {
-    document.getElementById('modal').style.display = 'none';
-}  
+    document.getElementsByClassName('close-btn').style.display = 'none';
+}
+
+function closeInvalidModal(){
+    const modal = document.getElementById('modal_1');
+    modal.style.display="none";
+}
+function closeInvalidModal2(){
+    const modal = document.getElementById('modal_2');
+    modal.style.display="none";
+}
+
+function closeInvalidModal3(){
+    const modal = document.getElementById('modal_3');
+    modal.style.display="none";
+}
+
