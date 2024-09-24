@@ -24,8 +24,4 @@ document.getElementById('btn-donate-noakhali')
       
       const newBalance = currentBalance - addMoney;
       document.getElementById('balance').innerText = newBalance + ' BDT';
-
-
-
-
    })
