@@ -6,14 +6,20 @@ document.getElementById('btn-donate-injured')
 
       if(isNaN(addMoneyInjured)){
         alert('Invalid Donation Amount');
+        closeInvalidModal3();
+        location.reload(true);
         return;
       }
       if(addMoneyInjured<0){
         alert('Invalid Donation Amount');
+        closeInvalidModal3();
+        location.reload(true);
         return;
       }
       if(addMoneyInjured>currentBalance){
         alert('Try again Later');
+        closeInvalidModal3();
+        location.reload(true);
         return;
       }
   

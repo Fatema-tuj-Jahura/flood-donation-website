@@ -3,21 +3,14 @@ document.getElementById('btn-donate-noakhali')
       event.preventDefault();
       const addMoney = getInputFieldById('add-money-noakhali');
       const currentBalance = getTextFieldById('balance');
-      const randomNum = /^\d+(\.\d{1,2})?$/;
-
+      
       if(isNaN(addMoney)){
         alert('Invalid Donation Amount');
         closeInvalidModal();
         location.reload(true);
         return;
       }
-      if(!randomNum.test(addMoney)){
-        alert('Invalid Donation Amount');
-        closeInvalidModal();
-        location.reload(true);
-        return;
-
-      }
+      
       if(addMoney<0){
         alert('Invalid Donation Amount');
         closeInvalidModal();
