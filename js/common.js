@@ -23,7 +23,7 @@ function closeModal() {
 
 function closeInvalidModal(){
     const modal = document.getElementById('modal_1');
-    modal.style.display="none";
+    modal.hidden= true;
 }
 function closeInvalidModal2(){
     const modal = document.getElementById('modal_2');

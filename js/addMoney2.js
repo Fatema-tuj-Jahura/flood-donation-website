@@ -7,16 +7,19 @@ document.getElementById('btn-donate-feni')
       if(isNaN(addMoneyFeni)){
         alert('Invalid Donation Amount');
         closeInvalidModal2();
+        location.reload(true);
         return;
       }
       if(addMoneyFeni<0){
         alert('Invalid Donation Amount');
         closeInvalidModal2();
+        location.reload(true);
         return;
       }
       if(addMoneyFeni>currentBalance){
         alert('Try again Later');
         closeInvalidModal2();
+        location.reload(true);
         return;
       }
   
