@@ -31,5 +31,21 @@ document.getElementById('btn-donate-feni')
       const newBalanceFeni = currentBalance - addMoneyFeni;
       document.getElementById('balance').innerText = newBalanceFeni + ' BDT';
 
+      updateDateTime();
+      setInterval(updateDateTime, 1000);
+      const time2 = document.getElementById('dateTime').innerText;
+
+       //History   
+       const div = document.createElement('div');
+       div.classList.add('bg-white');
+       div.innerHTML = `
+          <div class="border-slate-600 bg-white rounded-lg py-7 px-7 shadow-md my-auto mx-40">
+            <h4 class="text-xl font-bold">${newDonationFeni} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
+            <p>${time2}</p>
+          </div>
+       `
+       document.getElementById('history-container').appendChild(div);
+ 
+
     
    })

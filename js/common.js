@@ -35,3 +35,15 @@ function closeInvalidModal3(){
     modal.style.display="none";
 }
 
+function showSectionById(id){
+    document.getElementById('donation-form').classList.add('hidden');
+    document.getElementById('history').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
+function updateDateTime() {
+    const dateTimeElement = document.getElementById('dateTime');
+    const now = new Date();
+    const dateString = `Date : ${now.toString()}`;
+    dateTimeElement.textContent = dateString;
+}
+

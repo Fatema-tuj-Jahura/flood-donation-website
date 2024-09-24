@@ -31,5 +31,19 @@ document.getElementById('btn-donate-injured')
       const newBalanceInjured = currentBalance - addMoneyInjured;
       document.getElementById('balance').innerText = newBalanceInjured + ' BDT';
 
+      updateDateTime();
+      setInterval(updateDateTime, 1000);
+      const time3 = document.getElementById('dateTime').innerText;
+
+      const div = document.createElement('div');
+       div.classList.add('bg-white');
+       div.innerHTML = `
+          <div class="border-slate-600 bg-white rounded-lg py-7 px-7 shadow-md my-auto mx-40">
+            <h4 class="text-xl font-bold">${newDonationInjured} Taka is Donated for 15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h4>
+            <p>${time3}</p>
+          </div>
+       `
+       document.getElementById('history-container').appendChild(div);
+
     
    })
