@@ -23,7 +23,8 @@ document.getElementById('history-btn').addEventListener('mouseover', function ()
 document.getElementById('history-btn').addEventListener('mouseout', function () {
     this.style.backgroundColor = 'white'; 
 }); 
-// document.getElementById('blog-btn')
-//   .addEventListener('click', function(){
-//     showSectionById('donation-form');
-//   })
+
+document.getElementById('blog-btn')
+  .addEventListener('click', function(){
+    window.location.href = '/blog.html';
+  }) 

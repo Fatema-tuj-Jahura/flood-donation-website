@@ -36,7 +36,7 @@
     <section class=" bg-white/70 shadow-md pb-5 lg:pb-7">
         <header class="px-0 lg:px-28 py-9 bg-[#F9F7F3]">
             <nav class="flex justify-evenly lg:justify-around pl-4 lg:pl-0">
-                <button id="home-btn" class="btn rounded-lg bg-[#B4F461] text-black text-base lg:text-xl font-semibold">Home</button>
+                <button id="home" class="btn rounded-lg bg-[#B4F461] text-black text-base lg:text-xl font-semibold">Home</button>
                 <div class="flex items-center gap-2 lg:gap-3 pl-10 lg:pl-0">
                     <img src="./assets/logo.png" alt="">
                     <p class="text-black text-sm lg:text-xl font-semibold">Donate Bangladesh</p>
@@ -90,6 +90,12 @@
         </div>
 
     </main>
+    <script>
+        document.getElementById('home')
+         .addEventListener('click', function(){
+           window.location.href = '/index.html';
+        }) 
+    </script>
     
 </body>
 </html>
