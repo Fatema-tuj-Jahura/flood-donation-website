@@ -26,5 +26,5 @@ document.getElementById('history-btn').addEventListener('mouseout', function () 
 
 document.getElementById('blog-btn')
   .addEventListener('click', function(){
-    window.location.href = '/index2.html';
+    window.location.href = '/blog.html';
   }) 
