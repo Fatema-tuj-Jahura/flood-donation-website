@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="size-full m-0 p-0  overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPage</title>
+    <!-- Lexend Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .lexend {
+          font-family: "Lexend", sans-serif;
+        }
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/93b354355b.js" crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Daisy ui -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="lexend size-full m-0 p-0  overflow-x-hidden bg-white">
+    <section class=" bg-white/70 shadow-md pb-5 lg:pb-7">
+        <header class="px-0 lg:px-28 py-9 bg-[#F9F7F3]">
+            <nav class="flex justify-evenly lg:justify-around pl-4 lg:pl-0">
+                <button id="home-btn" class="btn rounded-lg bg-[#B4F461] text-black text-base lg:text-xl font-semibold">Home</button>
+                <div class="flex items-center gap-2 lg:gap-3 pl-10 lg:pl-0">
+                    <img src="./assets/logo.png" alt="">
+                    <p class="text-black text-sm lg:text-xl font-semibold">Donate Bangladesh</p>
+                </div>
+                <div class="flex items-center gap-2 lg:gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p id="balance" class="text-black text-sm lg:text-xl font-semibold">5500 BDT</p>
+                </div>
+            </nav>
+            
+        </header>
+
+    </section>
+    <main class="max-w-screen-xl mx-auto my-7 px-16 lg:px-28 bg-white">
+        <div class="bg-white shadow-lg rounded-lg">
+            <h2 class="text-black text-2xl font-bold text-center p-4">Important FAQ <i class="text-black fa-solid fa-question"></i></h2>
+            <div class="collapse collapse-arrow border-t border-base-300 bg-base-100">
+                <input type="checkbox" />
+                <div class="collapse-title text-black text-lg font-medium">
+                    What is the Document Object Model (DOM)?
+                </div>
+                <div class="collapse-content text-black">
+                    <p class="text-black">The Document Object Model (DOM) is a programming interface provided by web browsers that allows scripts to access and manipulate the content, structure, and style of HTML and XML documents.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-t border-base-300 bg-base-100">
+                <input type="checkbox" />
+                <div class="collapse-title text-black text-lg font-medium">How do you select an element from the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p class=" text-black">By using getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll()</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-t border-base-300 bg-base-100">
+                <input type="checkbox" />
+                <div class="collapse-title text-black text-lg font-medium">What is event delegation in the context of the DOM, and why is it useful?
+                </div>
+                <div class="collapse-content">
+                    <p class=" text-black">Event delegation is a technique in JavaScript that allows you to handle events at a higher level in the DOM rather than directly on the target elements themselves. It leverages the concept of event bubbling, where an event propagates up from the target element through its ancestors in the DOM tree. It improved performance, handled dynamic content. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-t border-base-300 bg-base-100">
+                <input type="checkbox" />
+                <div class="collapse-title text-black text-lg font-medium">How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p class=" text-black">To manipulate an element's attributes and styles using the DOM, we can use JavaScript methods like setAttribute() to set attributes or getAttribute() to retrieve them. We can also directly change properties, such as element.id or element.className. For styles, we can modify inline styles using element.style or use the classList property to add, remove, or toggle CSS classes. Additionally, we can update content using innerHTML or textContent and dynamically add or remove elements with methods like createElement() and appendChild(). </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
